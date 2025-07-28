@@ -21,20 +21,20 @@
   <title>Site Name</title>
   <meta
     name="description"
-    content="Welcome to Site Name - A personal space where I share my thoughts on coding, technology, and life."
+    content="Welcome to Site Name"
   />
   <meta
     name="keywords"
-    content="Ewan, personal website, coding, technology, programming, tech blog, Site Name"
+    content="Site Name, coding, technology, life, blog, personal space"
   />
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content={$page.url.origin + $page.url.pathname} />
-  <meta property="og:title" content="Site Title" />
+  <meta property="og:title" content="Site Name" />
   <meta
     property="og:description"
-    content="Welcome to Site Name - A personal space where I share my thoughts on coding, technology, and life."
+    content="Welcome to Site Name"
   />
   <meta property="og:site_name" content="Site Name" />
   {#if $page.url.origin}
@@ -46,9 +46,9 @@
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:url" content={$page.url.origin + $page.url.pathname} />
-  <meta name="twitter:title" content="Site Title" />
+  <meta name="twitter:title" content="Site Name" />
   <meta
-    name="twitter:description" content="A personal space where I share my thoughts on coding, technology, and life."
+    name="twitter:description" content="Welcome to Site Name"
   />
   {#if $page.url.origin}
     <meta name="twitter:image" content={$page.url.origin + "/embed/main.png"} />
