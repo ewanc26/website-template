@@ -13,7 +13,8 @@ const config = {
 		// See https://svelte.dev/docs/kit/adapters for more information about adapters.
 		adapter: adapter(),
 		prerender: {
-			entries: ['*']
+			entries: ['*'],
+			origin: process.env.PUBLIC_ORIGIN || 'http://localhost:5713'
 		},
 		alias: {
 			'$components': './src/lib/components',

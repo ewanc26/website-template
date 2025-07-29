@@ -82,6 +82,19 @@ To deploy using Docker:
 docker compose up -d
 ```
 
+#### SvelteKit Prerendering
+
+For optimal performance and SEO, this template is configured to prerender all pages by default. This is managed in `svelte.config.js` within the `prerender` object:
+
+```javascript
+prerender: {
+	entries: ['*'], // Prerenders all routes
+	origin: process.env.PUBLIC_ORIGIN || 'http://localhost:5713' // Can be set to your deployment origin if known
+},
+```
+
+If you have dynamic routes or content that should not be prerendered, you may need to adjust the `entries` array to specify which routes should be prerendered, or disable prerendering for specific pages.
+
 ## Licensing
 
 This project is a template based on WhiteBreeze. For comprehensive licensing details, please consult the `LICENSE` file within this repository.
